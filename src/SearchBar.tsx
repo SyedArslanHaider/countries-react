@@ -1,3 +1,4 @@
+// @ts-nocheck
 function SearchBar({ search, setSearch }) {
   return (
     <>

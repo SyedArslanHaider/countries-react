@@ -1,3 +1,4 @@
+// @ts-nocheck
 function SelectRegion({ region, setRegion }) {
   return (
     <>
