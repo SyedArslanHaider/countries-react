@@ -103,6 +103,7 @@ p {
 .search-bar {
   width: 100%;
   max-width: 400px;
+  margin-bottom: 10px;
   /* Adjust width as needed */
   padding: 10px 15px;
   font-size: 16px;
@@ -116,4 +117,32 @@ p {
   border-color: #007bff;
   /* Change border color when focused */
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: #2980b9;
+}
+
+select:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+option {
+  background: white;
+  color: #333;
+  padding: 10px;
 }
