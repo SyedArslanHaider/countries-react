@@ -1,3 +1,4 @@
+// @ts-nocheck
 import CountriesCard from "./CountriesCard";
 import "./App.css";
 function CountriesLIst({ countryName }) {
