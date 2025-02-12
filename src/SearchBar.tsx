@@ -1,5 +1,8 @@
-// @ts-nocheck
-function SearchBar({ search, setSearch }) {
+interface SearchBarProps {
+  search: string;
+  setSearch: (value: string) => void;
+}
+function SearchBar({ search, setSearch }: SearchBarProps) {
   return (
     <>
       <input

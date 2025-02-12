@@ -1,8 +1,23 @@
-// @ts-nocheck
 import "./App.css";
-function CountriesCard({ country }) {
+
+interface Country {
+  name: string;
+  alpha2Code: string;
+  capital: string;
+  region: string;
+  population: number;
+}
+
+interface CountriesCardProps {
+  country: Country;
+  darkMode: boolean; // Receive the darkMode prop
+}
+
+function CountriesCard({ country, darkMode }: CountriesCardProps) {
   return (
-    <div className="country-card">
+    <div
+      className={`country-card ${darkMode ? "lite-mode" : "dark-mode"}`} // Apply dark or light mode class
+    >
       <img
         src={`https://flagcdn.com/w320/${country.alpha2Code.toLowerCase()}.png`}
         alt={`Flag of ${country.name}`}
@@ -24,4 +39,5 @@ function CountriesCard({ country }) {
     </div>
   );
 }
+
 export default CountriesCard;

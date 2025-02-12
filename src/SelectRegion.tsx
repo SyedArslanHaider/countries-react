@@ -1,5 +1,9 @@
-// @ts-nocheck
-function SelectRegion({ region, setRegion }) {
+interface SelectRegionProps {
+  region: string;
+  setRegion: (value: string) => void;
+}
+
+function SelectRegion({ region, setRegion }: SelectRegionProps) {
   return (
     <>
       <select value={region} onChange={(e) => setRegion(e.target.value)}>

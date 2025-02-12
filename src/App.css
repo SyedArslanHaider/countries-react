@@ -146,3 +146,48 @@ option {
   color: #333;
   padding: 10px;
 }
+
+/* Light Theme */
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.light-theme .country-card {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.light-theme .country-card h2 {
+  color: #000;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .country-card {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #888;
+}
+
+.dark-theme .country-card h2 {
+  color: #fff;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
